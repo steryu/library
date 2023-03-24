@@ -1,11 +1,10 @@
 # libft, ft_printf & get_next_line
-libft, ft_printf &amp; get_next_line
 
 Library-42 is a collective name for the three projects i made at school:
 
 ### **libft**
-during this project we needed to make simple but handy functions by ourself. Because of that we learned a lot about how those functions internally worked instead of just blindly relaining on them.
-the following funcitons we made were:
+During this project we needed to recode simple but handy functions of the C standard library as well as some other utility functions. Because of that we learned a lot about how those functions internally worked instead of just blindly relaining on them. We would be using this library during the rest of the cursus.
+The following funcitons we made were:
 
 | function | description |
 |---------:|------------:|
@@ -75,7 +74,4 @@ ft_printf supports the following conversion specifiers:
 
 The most complicated part was the memory management. The function dynamically allocates memory for each line of input that it reads. And to avoid memory leaks, it is important to free this memory after it is no longer needed. To do this you use the free function a lot, this takes a pointer to a string buffer that was previously allocated, and frees the memory associated with that buffer.
 
-My own `get_next_line` is a bit complicated to follow because of the unnesasry use of dubble pointers, I hope to simplify the code in the future.
-
-
-
+My own `get_next_line` is a bit complicated to follow because of the unnessasry use of dubble pointers, I hope to simplify the code in the future.
