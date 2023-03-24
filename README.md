@@ -2,7 +2,7 @@
 
 Library-42 is a collective name for the three projects i made at school:
 
-## **libft** [![svan-ass's 42 Libft Score](https://badge42.vercel.app/api/v2/clfladlx3000608l58byc7e5w/project/2365307)](https://github.com/JaeSeoKim/badge42)
+## **libft**  [![svan-ass's 42 Libft Score](https://badge42.vercel.app/api/v2/clfladlx3000608l58byc7e5w/project/2365307)](https://github.com/JaeSeoKim/badge42)
 During this project we needed to recode simple but handy functions of the C standard library as well as some other utility functions. Because of that we learned a lot about how those functions internally worked instead of just blindly relaining on them. We would be using this library during the rest of the cursus.
 The following funcitons we made were:
 
