@@ -3,12 +3,12 @@ libft, ft_printf &amp; get_next_line
 
 Library-42 is a collective name for the three projects i made at school:
 
-Libft
+### **Libft**
 during this project we needed to make simple but handy functions by ourself. Because of that we learned a lot about how those functions internally worked instead of just blindly relaining on them.
 the following funcitons we made were:
 
-| Function name | Description |
-|--------------:|------------:|
+| function | description |
+|---------:|------------:|
 |isalpha   |this function checks if the given char is a letter |
 |isdigit   |this function checks if the given char is a digit |
 |isalnum   |this function checks if the given char is a letter or a digit |
@@ -37,22 +37,36 @@ the following funcitons we made were:
 |strtrim   |this function returns a copy of s1 with the characters specified in set removed from the beginning and the end of the string |
 |split     |this function splits s using the character c as a delimiter |
 |itoa      |this function allocates (with malloc(3)) and returns a string representing the integer received as an argument |
+|putnbr_fd |this function outputs the integer n to the given file descriptor |
 |strmapi   |this function applies the function f to each character of the string passed as argument to create a new string (with malloc(3)) resulting from successive applications of f |
 striteri  |this function applies the function f to each character of the string passed as argument, and passing its index as first argument. Each character is passed by address to f to be modified if necessary |
 |putchar_fd|this function outputs the character c to the given file descriptor |
 |putstr_fd |this function outputs the string s to the given file descriptor |
 |putendl_fd|this function outputs the string s to the given file descriptor, followed by a newline |
-|putnbr_fd |this function outputs the integer n to the given file descriptor |
-lstnew    |this function allocates (with malloc(3)) and returns a new element. The variable 'content' is initialized with the value of the parameter 'content'. The variable 'next' is initialized to NULL |
-lstadd_front|this function adds the element 'new' at the beginning of the list |
-lstsize   |this function counts the number of elements in a list |
-lstlast   |this function returns the last element of the list |
-lstadd_back|this function adds the element 'new' at the end of the list |
-lstdelone |this function takes as a parameter an element and frees the memory of the element's content using the function 'del' given as a parameter and free the element. The memory of 'next' must not be freed |
-lstclear  |this function deletes and frees the given element and every successor of that element, using the function 'del' and free(3). Finally, the pointer to the list must be set to NULL |
-lstiter   |this function iterates the list 'lst' and applies the function 'f' to the content of each element |
-lstmap    |this function iterates the list 'lst' and applies the function 'f' to the content of each element. Creates a new list resulting of the successive applications of the function 'f'. The 'del' function is used to delete the content of an element if needed |
+|lstnew    |this function allocates (with malloc(3)) and returns a new element. The variable 'content' is initialized with the value of the parameter 'content'. The variable 'next' is initialized to NULL |
+|lstadd_front|this function adds the element 'new' at the beginning of the list |
+|lstsize   |this function counts the number of elements in a list |
+|lstlast   |this function returns the last element of the list |
+|lstadd_back|this function adds the element 'new' at the end of the list |
+|lstdelone |this function takes as a parameter an element and frees the memory of the element's content using the function 'del' given as a parameter and free the element. The memory of 'next' must not be freed |
+|lstclear  |this function deletes and frees the given element and every successor of that element, using the function 'del' and free(3). Finally, the pointer to the list must be set to NULL |
+|lstiter   |this function iterates the list 'lst' and applies the function 'f' to the content of each element |
+|lstmap    |this function iterates the list 'lst' and applies the function 'f' to the content of each element. Creates a new list resulting of the successive applications of the function 'f'. The 'del' function is used to delete the content of an element if needed |
 
-ft_printf 
+### **ft_printf**
+ft_printf is a custom implementation of the printf function. During this project we learned and used Variadic functions, including:\
+`va_start` `va_arg` `va_list` and `va_end`
 
-get_nex_line
+**Supported Conversion Specifiers**\
+ft_printf supports the following conversion specifiers:
+
+- %c: prints a single character
+- %s: prints a string of characters
+- %p: prints a pointer address in hexadecimal notation
+- %d and %i: print signed decimal integers
+- %u: prints unsigned decimal integers
+- %x and %X: print hexadecimal integers
+- %f: prints floating-point numbers
+- %% prints a percent sign
+
+### **get_next_line**
