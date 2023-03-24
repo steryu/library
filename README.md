@@ -3,7 +3,7 @@ libft, ft_printf &amp; get_next_line
 
 Library-42 is a collective name for the three projects i made at school:
 
-### **Libft**
+### **libft**
 during this project we needed to make simple but handy functions by ourself. Because of that we learned a lot about how those functions internally worked instead of just blindly relaining on them.
 the following funcitons we made were:
 
@@ -54,7 +54,7 @@ striteri  |this function applies the function f to each character of the string 
 |lstmap    |this function iterates the list 'lst' and applies the function 'f' to the content of each element. Creates a new list resulting of the successive applications of the function 'f'. The 'del' function is used to delete the content of an element if needed |
 
 ### **ft_printf**
-ft_printf is a custom implementation of the printf function. During this project we learned and used Variadic functions, including:\
+`ft_printf` is a custom implementation of the `printf` function. During this project we learned and used Variadic functions, including:\
 `va_start` `va_arg` `va_list` and `va_end`
 
 **Supported Conversion Specifiers**\
@@ -70,3 +70,12 @@ ft_printf supports the following conversion specifiers:
 - %% prints a percent sign
 
 ### **get_next_line**
+
+`get_next_line` is a custom function to read a single line from a file descriptor. The function reads and returns the next line in a file, and can be called repeatedly to read multiple lines.
+
+The most complicated part was the memory management. The function dynamically allocates memory for each line of input that it reads. And to avoid memory leaks, it is important to free this memory after it is no longer needed. To do this you use the free function a lot, this takes a pointer to a string buffer that was previously allocated, and frees the memory associated with that buffer.
+
+My own `get_next_line` is a bit complicated to follow because of the unnesasry use of dubble pointers, I hope to simplify the code in the future.
+
+
+
