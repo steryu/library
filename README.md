@@ -52,6 +52,8 @@ striteri  |this function applies the function f to each character of the string 
 |lstiter   |this function iterates the list 'lst' and applies the function 'f' to the content of each element |
 |lstmap    |this function iterates the list 'lst' and applies the function 'f' to the content of each element. Creates a new list resulting of the successive applications of the function 'f'. The 'del' function is used to delete the content of an element if needed |
 
+<img src="https://github.com/steryu/library-42/blob/main/libft/imgs/libft" width="150" height="120">
+
 ### **ft_printf**
 `ft_printf` is a custom implementation of the `printf` function. During this project we learned and used Variadic functions, including:\
 `va_start` `va_arg` `va_list` and `va_end`
@@ -68,6 +70,8 @@ ft_printf supports the following conversion specifiers:
 - %f: prints floating-point numbers
 - %% prints a percent sign
 
+<img src="https://github.com/steryu/so_long/blob/main/sprites/pngs/score.png" width="150" height="120">
+
 ### **get_next_line**
 
 `get_next_line` is a custom function to read a single line from a file descriptor. The function reads and returns the next line in a file, and can be called repeatedly to read multiple lines. This implementation of `get_next_line` is compatible with multiple file descriptors, including standard input, standard output, and network connections.
@@ -75,3 +79,5 @@ ft_printf supports the following conversion specifiers:
 The most complicated part was the memory management. The function dynamically allocates memory for each line of input that it reads. And to avoid memory leaks, it is important to free this memory after it is no longer needed. To do this you use the free function a lot, this takes a pointer to a string buffer that was previously allocated, and frees the memory associated with that buffer.
 
 My own `get_next_line` is a bit complicated to follow because of the unnessasry use of dubble pointers, I hope to simplify the code in the future.
+
+<img src="https://github.com/steryu/so_long/blob/main/sprites/pngs/score.png" width="150" height="120">
