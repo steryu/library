@@ -70,7 +70,7 @@ ft_printf supports the following conversion specifiers:
 
 ### **get_next_line**
 
-`get_next_line` is a custom function to read a single line from a file descriptor. The function reads and returns the next line in a file, and can be called repeatedly to read multiple lines.
+`get_next_line` is a custom function to read a single line from a file descriptor. The function reads and returns the next line in a file, and can be called repeatedly to read multiple lines. This implementation of `get_next_line` is compatible with multiple file descriptors, including standard input, standard output, and network connections.
 
 The most complicated part was the memory management. The function dynamically allocates memory for each line of input that it reads. And to avoid memory leaks, it is important to free this memory after it is no longer needed. To do this you use the free function a lot, this takes a pointer to a string buffer that was previously allocated, and frees the memory associated with that buffer.
 
