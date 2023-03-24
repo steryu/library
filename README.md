@@ -27,7 +27,7 @@ The following funcitons we made were:
 |strchr    |this function locates the first occurrence of c (converted to a char) in string s |
 |strrchr   |this function locates the last occurrence of c (converted to a char) in string s |
 |strnstr   |this function locates the first occurrence of the null-terminated string little in the string big, where not more than len characters are searched |
-|strncmp   |this function compares not more than n characters. Because strncmp() is designed for comparing strings rather than binary data, characters that appear after a `\0' character are not compared 
+|strncmp   |this function compares not more than n characters. Because strncmp() is designed for comparing strings rather than binary data, characters that appear after a \`\0' character are not compared 
 |atoi      |this function converts the initial portion of the string pointed to by str to int representation |
 |calloc    |this function allocates memory for an array of nmemb elements of size bytes each and returns a pointer to the allocated memory |
 |strdup    |this function returns a pointer to a new string which is a duplicate of the string s |
@@ -52,7 +52,7 @@ striteri  |this function applies the function f to each character of the string 
 |lstiter   |this function iterates the list 'lst' and applies the function 'f' to the content of each element |
 |lstmap    |this function iterates the list 'lst' and applies the function 'f' to the content of each element. Creates a new list resulting of the successive applications of the function 'f'. The 'del' function is used to delete the content of an element if needed |
 
-## **ft_printf** [![svan-ass's 42 ft_printf Score](https://badge42.vercel.app/api/v2/clfladlx3000608l58byc7e5w/project/2388583)](https://github.com/JaeSeoKim/badge42)
+## **ft_printf** &nbsp; [![svan-ass's 42 ft_printf Score](https://badge42.vercel.app/api/v2/clfladlx3000608l58byc7e5w/project/2388583)](https://github.com/JaeSeoKim/badge42)
 `ft_printf` is a custom implementation of the `printf` function. During this project we learned and used Variadic functions, including:\
 `va_start` `va_arg` `va_list` and `va_end`
 
@@ -68,7 +68,7 @@ ft_printf supports the following conversion specifiers:
 - %f: prints floating-point numbers
 - %% prints a percent sign
 
-## **get_next_line** [![svan-ass's 42 Libft Score](https://badge42.vercel.app/api/v2/clfladlx3000608l58byc7e5w/project/2365307)](https://github.com/JaeSeoKim/badge42)
+## **get_next_line** &nbsp; [![svan-ass's 42 Libft Score](https://badge42.vercel.app/api/v2/clfladlx3000608l58byc7e5w/project/2365307)](https://github.com/JaeSeoKim/badge42)
 
 `get_next_line` is a custom function to read a single line from a file descriptor. The function reads and returns the next line in a file, and can be called repeatedly to read multiple lines. This implementation of `get_next_line` is compatible with multiple file descriptors, including standard input, standard output, and network connections.
 
